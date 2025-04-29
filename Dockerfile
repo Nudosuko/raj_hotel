@@ -1,5 +1,8 @@
 FROM php:8.1-apache
 
+# Install mysqli extension for MySQL connection
+RUN docker-php-ext-install mysqli
+
 # Enable Apache mod_rewrite (needed for CodeIgniter)
 RUN a2enmod rewrite
 
@@ -11,6 +14,3 @@ RUN chown -R www-data:www-data /var/www/html
 
 # Expose default Apache port
 EXPOSE 80
-
-RUN apt-get update && apt-get install -y libmysqli-driver
-
