@@ -1,16 +1,16 @@
 FROM php:8.1-apache
 
-# Install mysqli extension for MySQL connection
+# Install PHP mysqli extension (for MySQL)
 RUN docker-php-ext-install mysqli
 
 # Enable Apache mod_rewrite (needed for CodeIgniter)
 RUN a2enmod rewrite
 
-# Copy project files to Apache server
+# Copy project files to Apache server directory
 COPY . /var/www/html/
 
-# Give permissions (optional but safe)
+# Set proper permissions
 RUN chown -R www-data:www-data /var/www/html
 
-# Expose default Apache port
+# Expose Apache port
 EXPOSE 80
