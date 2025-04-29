@@ -72,14 +72,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-// postgresql://raj_hotel:5r1e7GGTuQ2C7TDJDnwYIPxppt4jOm0s@dpg-d087u7ngi27c7388v4fg-a/raj_hotel (this url from render where i deploy my project)
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'dpg-d087u7ngi27c7388v4fg-a',
-	'username' => 'raj_hotel',
-	'password' => '5r1e7GGTuQ2C7TDJDnwYIPxppt4jOm0s',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'raj_hotel',
-	'dbdriver' => 'postgre',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
