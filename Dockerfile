@@ -11,3 +11,6 @@ RUN chown -R www-data:www-data /var/www/html
 
 # Expose default Apache port
 EXPOSE 80
+
+RUN apt-get update && apt-get install -y libmysqli-driver
+
