@@ -43,8 +43,6 @@ class Hotel extends CI_Controller {
         }
         $data['x_axis'] = $dates;
         $data['y_axis'] = $amounts;
-
-
         $this->load->view('hotel/index',$data);
         $this->footer();
     }

@@ -34,6 +34,7 @@
         font-size: 14px;
     }
 </style>
+
 <div class="container">
 	<div class="row">
 		<?php
