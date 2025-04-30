@@ -99,11 +99,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => getenv('DB_HOSTNAME'),
-	'username' => getenv('DB_USERNAME'),
-	'password' => getenv('DB_PASSWORD'),
-	'database' => getenv('DB_DATABASE'),
-	'port'     => getenv('DB_PORT'),
+	'hostname' => 'mysql-3d9f36ef-shubhamsapka5282-45da.k.aivencloud.com',
+	'username' => 'avnadmin',
+	'password' => 'AVNS_6mJR4z7I-wPrWC0EUmB',
+	'database' => 'defaultdb',
+	'port' => 23506,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
