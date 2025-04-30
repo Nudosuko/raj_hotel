@@ -23,8 +23,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost/raj_hotel/';
-$config['base_url'] = 'https://raj-hotel-lwst.onrender.com/';
+if (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+    $config['base_url'] = 'http://localhost/raj_hotel/';
+} else {
+    $config['base_url'] = 'https://raj-hotel-lwst.onrender.com/';
+}
+
 
 /*
 |--------------------------------------------------------------------------
