@@ -312,4 +312,12 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+// Load .env manually
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    foreach ($env as $key => $value) {
+        putenv("$key=$value");
+    }
+}
+
 require_once BASEPATH.'core/CodeIgniter.php';
