@@ -99,8 +99,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	// 'hostname' => 'mysql-3d9f36ef-shubhamsapka5282-45da.k.aivencloud.com',
-	'hostname' => 'mysql://avnadmin:AVNS_6mJR4z7I-wPrWC0EUmB@mysql-3d9f36ef-shubhamsapka5282-45da.k.aivencloud.com:23506/defaultdb?ssl-mode=REQUIRED',
+	'hostname' => 'mysql-3d9f36ef-shubhamsapka5282-45da.k.aivencloud.com',
+	// 'hostname' => 'mysql://avnadmin:AVNS_6mJR4z7I-wPrWC0EUmB@mysql-3d9f36ef-shubhamsapka5282-45da.k.aivencloud.com:23506/defaultdb?ssl-mode=REQUIRED',
 	'username' => 'avnadmin',
 	// 'password' => 'AVNS_6mJR4z7I-wPrWC0EUmB',
 	'password' => getenv('HOTEL_DB_PASS'),
