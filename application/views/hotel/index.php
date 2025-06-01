@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <style>
     .order-card {
         background-color: #fff;
