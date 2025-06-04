@@ -319,5 +319,7 @@ if (file_exists(__DIR__ . '/.env')) {
         putenv("$key=$value");
     }
 }
-
+if (headers_sent($file, $line)) {
+    die("⚠️ Headers already sent in $file on line $line");
+}
 require_once BASEPATH.'core/CodeIgniter.php';
